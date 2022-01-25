@@ -24,9 +24,7 @@ html{
     padding: 0;
     box-sizing: border-box;
 }
-ul{
-    list-style-type: none;
-}
+
 a{
     text-decoration: none;
     color: var(--primary-color);
@@ -38,63 +36,84 @@ body{
     font-family: var(--font-family);
 
 }
-nav{
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 3.5rem;
-    background-color: var(--bg-color);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-    background: rgb(15, 14, 14);
+.navbar-toggler-icon{
+  background-color: gray;
 }
-.burger-menu{
-    height: 30px;
-    width: 30px;
+
+.navbar-style{
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
 }
-nav h1{
-    color: var(--primary-color);
+.logo {
+  height: 48px;
+  padding: 2px 10px;
 }
-nav a{
-    color: var(--primary-color);
-    transition: var(--transition);
+.icon-bar{
+  background-color: peru;
 }
-nav a:hover{
-    color: var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color);
+.big-text{
+  font-size: 52px;
+  margin: 20px 0;
+  color: peru;
 }
-nav ul{
-    display: flex;
-    gap: 1.9rem;
+
+a.btn{
+  margin: 30px 10px;
+  width: 150px;
+  padding: 10px;
+  border-radius: 20px;
+
 }
-nav ul li{
-    font-weight: var(--bold-font);
+a.btn-first{
+  background-color: peru;
+  color: #fff;
 }
-.burger-menu{
-    color: var(--primary-color);
-    font-size: 2rem;
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
-    display: none;
+a.btn-second{
+  background-color: transparent;
+  border: 1px solid peru;
+  color: #333;
 }
-.hero{
+a.btn:hover{
+  background: peru;
+  border: none;
+  color: #fff;
+  box-shadow: 5px 5px 10px #999;
+  transition: 0.3s;
+}
+.banner-info, .banner-image {
+  margin: 30px 0;
+}
+section{
+  margin-top: 100px;
+}
+footer {
+  background-color: rgba(222, 229, 231, 0.726);
+  padding: 1.25rem;
+  text-align: center;
+  margin: 2rem 0 0;
+}
+
+
+
+
+
+
+
+/* .hero{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2.5;
     max-width: 68.75;
     margin: auto;
-    background: peru;
+
+    height: 90vh;
 }
 .hero img{
     height: 37.5rem;
     width: 30rem;
-}
-.bio{
+} */
+/* .bio{
     width: 25rem;
     padding: 0.625rem;
     border-radius: 6px;
@@ -107,10 +126,10 @@ nav ul li{
 .bio p{
     line-height: var(--line-height);
     padding: 0.3rem 0;
-}
+} */
 
 /* more about section */
-.more-about{
+/* .more-about{
     background-color: var(--bg-color);
     padding: 1rem 6rem;
 }
@@ -121,10 +140,10 @@ nav ul li{
 .more-about p{
     line-height: var(--line-height);
     padding: 0.4rem;
-}
+} */
 
 /* Article styling */
-.Articles .about-content{
+/* .Articles .about-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -155,10 +174,10 @@ nav ul li{
 .Articles .about-content .right p{
     text-align: justify;
     padding-right: 150px;
-}
+} */
 
 /* contacts styling */
-.contact {
+/* .contact {
     margin-top: 2rem;
   }
   
@@ -214,9 +233,9 @@ nav ul li{
     background-color: var(--primary-color);
     border: 2px solid var(--primary-color);
     cursor: pointer;
-  }
+  } */
   /* footer styling */
-  footer {
+  /* footer {
     background-color: var(--bg-color);
     padding: 1.25rem;
     text-align: center;
@@ -224,9 +243,9 @@ nav ul li{
   }
 
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 720px) { */
     /*changes reflects on screen with a width of 720px and below*/
-    nav {
+    /* nav {
         padding: 1.5rem 1rem;
       }
       nav ul {
@@ -250,23 +269,9 @@ nav ul li{
     
       nav ul.show {
         transform: translateX(0);
-      }
-      .hero {
-        margin-top: -4rem;
-        flex-direction: column;
-        gap: 0;
-      }
-    
-      .hero img {
-            height: 37.5rem;
-            width: 30rem;
-        }
-    
-      .bio {
-        margin-top: -7rem;
-        width: 20.5rem;
-      }
-      .more-about{
+      } */
+  
+      /* .more-about{
         background-color: var(--bg-color);
         padding: 1rem 4rem;
     }
@@ -277,15 +282,15 @@ nav ul li{
         /* align-items: center;
         justify-content: center;
         padding-right: 50px; */
-    }
+    /* }
     .Articles .about-content .right{
-        width: 100%;
+        width: 100%; */ 
         /* border-radius: 11px;
         box-shadow: 0 3px 10px var(--primary-shadow);
         padding: 20px; */
         
-    }
+    /* }
     .Articles .about-content.left{
         width: 80%;
     }
-  }
+  } */
